@@ -196,36 +196,6 @@ body {
     }
 }
 
-/* ====================== FOOTER ====================== */
-.footer-section {
-    background: linear-gradient(135deg, #2a2a9e, #1a1a6e);
-    color: #fff;
-    margin-top: 100px;
-}
-
-.footer-logo {
-    width: 70px;
-    height: 55px;
-    object-fit: contain;
-}
-
-.footer-link {
-    color: #ddd;
-    text-decoration: none;
-    line-height: 2.2;
-    transition: color 0.3s;
-}
-
-.footer-link:hover {
-    color: #00ffff !important;
-    padding-left: 8px;
-}
-
-.social-icons a:hover {
-    transform: translateY(-4px);
-    color: #00ffff !important;
-}
-
 /* ====================== HAQQIMIZDA ====================== */
 .about-hero {
     background: linear-gradient(135deg, #4141eb, #2d2d9e);
@@ -312,4 +282,37 @@ body {
 .form-control:focus {
     border-color: #4141eb;
     box-shadow: 0 0 0 0.2rem rgba(65, 65, 235, 0.25);
+}
+
+/* ====================== FOOTER ====================== */
+.footer-section {
+    background: linear-gradient(135deg, #2a2a9e, #1a1a6e);
+    color: #fff;
+    margin-top: 100px;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.footer-link {
+    color: #ddd;
+    text-decoration: none;
+    line-height: 2.2;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #00ffff !important;
+    padding-left: 8px;
+}
+.social-icons i {
+    font-size: 30px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+    color: #00ffff !important;
 }
