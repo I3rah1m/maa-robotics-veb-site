@@ -1,0 +1,315 @@
+/* ====================== ƏSAS ====================== */
+* {
+    font-size: 300;
+}
+
+body {
+    background-color: #f8f9fa;
+    padding-top: 90px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #4141eb, #2d2d9e, midnightblue) !important;
+    height: 90px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.logo-img {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand .title {
+    color: #fff0e6;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 14px;
+    white-space: nowrap;
+}
+
+.nav-link {
+    color: #fff0e6 !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00ffff !important;
+}
+
+/* ====================== MOBİL MENU ====================== */
+@media (max-width: 991.98px) {
+    .navbar {
+        height: 70px !important;
+    }
+    body {
+        padding-top: 70px !important;
+    }
+    .logo-img {
+        width: 50px !important;
+        height: 40px !important;
+    }
+    .navbar-brand .title {
+        font-size: 18px !important;
+        margin-left: 10px !important;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        width: 280px;
+        height: calc(100vh - 70px);
+        background: white;
+        box-shadow: -5px 0 25px rgba(0,0,0,0.3);
+        transition: right 0.35s ease;
+        padding: 20px 0;
+        z-index: 1060;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        color: #333 !important;
+        text-align: right;
+        padding: 15px 30px !important;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #4141eb !important;
+        font-weight: bold;
+    }
+}
+
+/* ====================== CAROUSEL ====================== */
+.my-carousel {
+    max-width: 1300px;
+    width: 92%;
+    margin: 50px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.my-carousel .carousel-inner,
+.my-carousel .carousel-item,
+.my-carousel img {
+    height: 550px;
+    border-radius: 18px;
+}
+
+.my-carousel img {
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.55);
+    border-radius: 12px;
+    padding: 20px 30px !important;
+    left: 8%;
+    right: 8%;
+    bottom: 40px;
+}
+
+.slide-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.slide-des {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+}
+
+/* Mobil uyğunlaşdırma */
+@media (max-width: 768px) {
+    .my-carousel,
+    .my-carousel .carousel-inner,
+    .my-carousel .carousel-item,
+    .my-carousel img {
+        height: 400px !important;
+    }
+
+    .slide-title {
+        font-size: 2rem !important;
+    }
+    .slide-des {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-carousel,
+    .my-carousel .carousel-inner,
+    .my-carousel .carousel-item,
+    .my-carousel img {
+        height: 320px !important;
+    }
+
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+        padding: 12px 16px !important;
+    }
+
+    .slide-title {
+        font-size: 1.6rem !important;
+    }
+    .slide-des {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ====================== KARTLAR ====================== */
+.my-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.my-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* ====================== FOOTER ====================== */
+.footer-section {
+    background: linear-gradient(135deg, #2a2a9e, #1a1a6e);
+    color: #fff;
+    margin-top: 100px;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.footer-link {
+    color: #ddd;
+    text-decoration: none;
+    line-height: 2.2;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #00ffff !important;
+    padding-left: 8px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px);
+    color: #00ffff !important;
+}
+
+/* ====================== HAQQIMIZDA ====================== */
+.about-hero {
+    background: linear-gradient(135deg, #4141eb, #2d2d9e);
+    color: white;
+    padding: 60px 0 80px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.about-stats {
+    background: #f1f3ff;
+}
+
+.about-stats h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #4141eb;
+}
+
+.about-stats p {
+    font-weight: 600;
+    color: #444;
+}
+
+/* ====================== MƏHSULLAR ====================== */
+.products-hero {
+    background: linear-gradient(135deg, #2d2d9e, #4141eb);
+    color: white;
+    padding: 60px 0 80px;
+}
+
+.products-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.products-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ====================== TƏDBİRLƏR ====================== */
+.events-hero {
+    background: linear-gradient(135deg, #2d2d9e, #4141eb);
+    color: white;
+    padding: 60px 0 80px;
+}
+
+.events-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.events-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ====================== ƏLAQƏ ====================== */
+.contact-hero {
+    background: linear-gradient(135deg, #4141eb, #2d2d9e);
+    color: white;
+    padding: 60px 0 80px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.form-control:focus {
+    border-color: #4141eb;
+    box-shadow: 0 0 0 0.2rem rgba(65, 65, 235, 0.25);
+}
